@@ -1,0 +1,16 @@
+﻿@model Work
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h6>Work description - </h6> @Model.Description for @Model.Time hours</p>
+
+<p><a href="/Work/Edit/@Model.Id">Edit</a></p>
+
+<small>Delete this work? Press the button</small>
+<form action="/Work/Delete/@Model.Id" method="post">
+    <button>Delete</button>
+    </form>
+    
